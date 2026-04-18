@@ -4,7 +4,7 @@ A Claude Code plugin that turns a topic or a single image into a narrated, subti
 
 ## Demo
 
-![Demo: generating a Hokusai explainer video end-to-end](docs/demo.gif)
+A recorded end-to-end walkthrough (Hokusai explainer, title scene → render) is planned for v0.2.0 — see [`docs/DEMO_GIF_PLAN.md`](docs/DEMO_GIF_PLAN.md) for the capture script.
 
 ## What you get
 
