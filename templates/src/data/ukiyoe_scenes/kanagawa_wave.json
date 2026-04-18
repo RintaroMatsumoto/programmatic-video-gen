@@ -1,0 +1,76 @@
+{
+  "meta": {
+    "title_ja": "神奈川沖浪裏",
+    "title_en": "The Great Wave off Kanagawa",
+    "artist": "葛飾北斎",
+    "year": 1831
+  },
+  "scenes": [
+    {
+      "id": 1,
+      "section": "title",
+      "duration": 10,
+      "narration_ja": "葛飾北斎、神奈川沖浪裏。冨嶽三十六景の中でも最も有名な一枚です。",
+      "subtitle_ja": "神奈川沖浪裏 ― 冨嶽三十六景",
+      "narration_en": "Katsushika Hokusai's Great Wave off Kanagawa — the most iconic print of the Thirty-Six Views.",
+      "subtitle_en": "The Great Wave off Kanagawa",
+      "camera": { "zoom": 1.0, "x": 0.5, "y": 0.5, "endZoom": 1.02 },
+      "overlays": []
+    },
+    {
+      "id": 2,
+      "section": "overview",
+      "duration": 20,
+      "narration_ja": "大波が、今にも舟を呑み込もうとしています。その遙か向こう、静かに佇むのが富士山です。動と静の劇的な対比が、この作品の魅力です。",
+      "subtitle_ja": "大波と富士 ― 動と静の対比",
+      "narration_en": "A towering wave is about to swallow the boats. Far in the distance, Mount Fuji sits in perfect stillness.",
+      "subtitle_en": "Motion and stillness in dramatic balance",
+      "camera": { "zoom": 1.0, "x": 0.5, "y": 0.5, "endZoom": 1.12, "endX": 0.5, "endY": 0.5 },
+      "overlays": []
+    },
+    {
+      "id": 3,
+      "section": "composition",
+      "duration": 60,
+      "narration_ja": "画面を三分割すると、大波が左上、富士が右下に配置されています。波の爪のような飛沫が、観る者の視線を富士へと導きます。対角線を使った見事な導線です。",
+      "subtitle_ja": "三分割構図 ― 波の爪が富士へ導く",
+      "narration_en": "Using the rule of thirds, the wave dominates the upper-left, while Fuji anchors the lower-right. The foam claws guide the eye diagonally toward the mountain.",
+      "subtitle_en": "The rule of thirds, guided by the wave's claws",
+      "camera": { "zoom": 1.15, "x": 0.3, "y": 0.35, "endZoom": 1.25, "endX": 0.7, "endY": 0.65 },
+      "overlays": []
+    },
+    {
+      "id": 4,
+      "section": "technique",
+      "duration": 60,
+      "narration_ja": "この青は、輸入されたばかりのベロ藍、プルシアン・ブルーです。北斎はこの新しい顔料を大胆に使いこなし、浮世絵の色彩表現を一変させました。彫師・摺師の技も見事です。",
+      "subtitle_ja": "ベロ藍(プルシアン・ブルー)の革命",
+      "narration_en": "The deep blue is Prussian Blue, a newly imported pigment. Hokusai's bold use of it revolutionized ukiyo-e colour, perfected by master carvers and printers.",
+      "subtitle_en": "Prussian Blue — a chromatic revolution",
+      "camera": { "zoom": 1.4, "x": 0.35, "y": 0.45, "endZoom": 1.6, "endX": 0.35, "endY": 0.45 },
+      "overlays": []
+    },
+    {
+      "id": 5,
+      "section": "history",
+      "duration": 60,
+      "narration_ja": "一八三一年頃の作。江戸後期、庶民の旅文化と富士信仰を背景に生まれました。のちに欧州へ渡り、印象派の画家たちに衝撃を与えます。ドビュッシーの交響詩「海」の表紙にも使われました。",
+      "subtitle_ja": "1831年頃 ― ジャポニスムの源流",
+      "narration_en": "Printed around 1831 amid Edo-era pilgrimage culture, this image later crossed to Europe and shocked the Impressionists. Debussy chose it for the cover of La Mer.",
+      "subtitle_en": "A wave that crossed oceans and eras",
+      "camera": { "zoom": 1.1, "x": 0.5, "y": 0.5, "endZoom": 1.0, "endX": 0.5, "endY": 0.5 },
+      "overlays": []
+    },
+    {
+      "id": 6,
+      "section": "outro",
+      "duration": 30,
+      "narration_ja": "一枚の版画の中に、構図、色彩、そして時代が凝縮されています。次回は冨嶽三十六景の別の一枚、凱風快晴を取り上げます。ご視聴ありがとうございました。",
+      "subtitle_ja": "次回 ― 凱風快晴",
+      "narration_en": "Composition, colour, and history condensed into a single print. Next: Fine Wind, Clear Morning — another Fuji, another story.",
+      "subtitle_en": "Next: Fine Wind, Clear Morning",
+      "camera": { "zoom": 1.0, "x": 0.5, "y": 0.5, "endZoom": 1.05 },
+      "overlays": []
+    }
+  ]
+}
