@@ -238,20 +238,26 @@ git push https://github.com/RintaroMatsumoto/programmatic-video-gen.git main
 ### 7.3 日本語を含むコミットメッセージ
 
 Windows cmd から直接 `-m "件名"` で日本語を渡すと cp932 で化ける、または
-エスケープ地獄に入る。必ずバッチファイル経由で実行する：
+エスケープ地獄に入る。**ユーザーに .bat を渡して実行させるのは禁止**
+（FA 道具箱 §9 — ユーザーはコマンド実行しない。Claude が DC で回す）。
 
-```bat
-@echo off
-setlocal
-cd /d "%~dp0"
-git add -A
-git commit -F _commit_msg.txt
-if errorlevel 1 exit /b 1
-git push https://github.com/RintaroMatsumoto/programmatic-video-gen.git main
-```
+確立された手順：
 
-`_commit_msg.txt` は UTF-8 で多行メッセージをそのまま並べる。
-実行後、`.bat` と `.txt` は削除してよい。
+1. `_commit_msg.txt` を Cowork の Write ツールで UTF-8 書き出し
+   （件名 1 行 → 空行 → 本文の多行）。
+2. DC で cmd セッションを開き、リポジトリに `cd /d`。
+3. `git add -A`
+   `git reset HEAD _commit_msg.txt`（メッセージ自体は commit に含めない）
+4. `git commit -F _commit_msg.txt`
+5. `git push https://github.com/<user>/<repo>.git main`
+6. `del _commit_msg.txt`（後始末）
+7. タグを切るなら `git tag vX.Y.Z && git push https://.../<repo>.git vX.Y.Z`
+
+この 7 ステップを DC 側の同一 cmd セッションで続けて叩くだけで通る。
+CRLF 警告は Windows 側では無害（LF → CRLF 変換するだけ）。
+
+Co-Authored-By を付けるなら `_commit_msg.txt` の末尾に空行 2 行を挟んで
+`Co-Authored-By: Name <email@example.com>` を足す。
 
 ### 7.4 落とし穴集（FA §2 から関連分を抜粋）
 
