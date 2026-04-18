@@ -8,7 +8,8 @@ opinionated Claude Code plugin, so the contribution flow is deliberately light.
 - Use GitHub Issues for bugs, crashes, broken renders, or concrete feature
   requests.
 - Include your OS, Node version, Python version, VOICEVOX version, and the
-  output of `py templates/scripts/_healthcheck.py` when relevant.
+  output of `py scripts\ukiyoe\_healthcheck.py` (run from your scaffolded
+  project, not from the plugin repo) when relevant.
 - For ideas or open-ended discussion, prefer a GitHub Discussion (or an issue
   clearly tagged `discussion`).
 

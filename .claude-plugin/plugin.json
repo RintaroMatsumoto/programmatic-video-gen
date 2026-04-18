@@ -1,6 +1,6 @@
 {
   "name": "programmatic-video-gen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate narrated explainer videos from a single image or topic using Remotion + Claude + VOICEVOX. Ships an ukiyo-e art-commentary pipeline and a general Remotion scene template.",
   "author": {
     "name": "Rintaro Matsumoto"

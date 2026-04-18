@@ -6,8 +6,8 @@ Ukiyoe pipeline orchestrator.
 単一作品に対して、パイプライン各段を順に走らせる。
 失敗したステップで停止する。スキップしたい段階は --skip で除外。
 
-MVPでは以下3ステップで完結:
-    download → script → narration
+MVPは以下4ステップで完結:
+    download → script → translate → narration
 
 フルパイプライン:
     download → script → translate → narration → segment → depth

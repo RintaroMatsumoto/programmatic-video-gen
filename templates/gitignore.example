@@ -1,0 +1,35 @@
+# Rename to .gitignore in your scaffolded project.
+# (Shipped as gitignore.example so it is not hidden in the plugin repo.)
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Environment — keep .env.example, ignore secrets
+.env
+.env.local
+.env.*.local
+
+# Remotion output
+output/
+renders/
+*.mp4
+*.mov
+*.webm
+
+# Generated narration audio (regeneratable from scene JSON)
+public/ukiyoe/*/audio/
+public/ukiyoe/*/original.*
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

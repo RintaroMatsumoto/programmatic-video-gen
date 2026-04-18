@@ -33,7 +33,7 @@ except ImportError:
     print("[error] pip install anthropic python-dotenv")
     sys.exit(2)
 
-MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-4-7")
+MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
 
 
 PROMPT_TEMPLATE = """あなたは浮世絵の解説動画を制作する放送作家です。以下の作品について、

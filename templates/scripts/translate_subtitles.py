@@ -29,7 +29,7 @@ except ImportError:
     print("[error] pip install anthropic python-dotenv")
     sys.exit(2)
 
-MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-4-7")
+MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
 
 
 SYSTEM = (

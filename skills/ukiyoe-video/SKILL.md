@@ -45,7 +45,20 @@ MVP uses the first four steps. Phase 2 adds SAM2 segmentation and Depth Anything
 
 ### Step-by-step
 
-1. **Scaffold files into the user's workspace.** If `scripts/ukiyoe/` and `src/compositions/UkiyoeAnimation.tsx` do not exist, copy them from this plugin's `templates/` directory into the user's repo. Keep the same relative paths.
+1. **Scaffold files into the user's workspace.** Copy this plugin's `templates/` directory into the user's repo with the following mapping:
+
+   - `templates/scripts/*.py`        → `scripts/ukiyoe/*.py`
+   - `templates/src/components/*`    → `src/components/*`
+   - `templates/src/compositions/*`  → `src/compositions/*`
+   - `templates/src/Root.tsx`        → `src/Root.tsx` (skip if already present)
+   - `templates/src/index.ts`        → `src/index.ts` (skip if already present)
+   - `templates/package.json`        → `package.json` (skip if already present)
+   - `templates/remotion.config.ts`  → `remotion.config.ts` (skip if already present)
+   - `templates/tsconfig.json`       → `tsconfig.json` (skip if already present)
+   - `templates/.env.example`        → `.env.example` (never overwrite `.env`)
+   - `templates/gitignore.example`   → `.gitignore` (skip if already present — note the dot)
+
+   The Python orchestrator resolves `REPO` from its own location, so the scripts must live at `scripts/ukiyoe/` — not elsewhere.
 
 2. **Create a scene JSON.** Write `src/data/ukiyoe_scenes/<slug>.json` following `references/scene-json-schema.md`. Six scenes: title (10s), overview (20s), composition (60s), technique (60s), history (60s), outro (30s). Every scene needs `narration_ja`, `subtitle_ja`, `narration_en`, `subtitle_en`, `camera { zoom, x, y, endZoom, endX, endY }`.
 
@@ -68,7 +81,7 @@ MVP uses the first four steps. Phase 2 adds SAM2 segmentation and Depth Anything
 6. **Render.** For a quick sanity check, render 10 seconds first:
 
    ```
-   npx remotion render Ukiyo<CamelCaseName> output/<slug>_preview.mp4 --frames=0-299
+   npx remotion render Ukiyoe<CamelCaseName> output/<slug>_preview.mp4 --frames=0-299
    ```
 
    Full render only after the preview looks right — a 4-minute video takes 60–90 minutes on CPU.

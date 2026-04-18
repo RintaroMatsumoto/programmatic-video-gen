@@ -45,11 +45,13 @@ curl http://127.0.0.1:50021/version
 
 Speaker IDs commonly used:
 
-- `3` — ずんだもん ノーマル
-- `1` — 四国めたん ノーマル
+- `16` — 九州そら ノーマル (plugin default — calm, lower-register narration)
+- `8`  — 春日部つむぎ ノーマル
+- `3`  — ずんだもん ノーマル
+- `1`  — 四国めたん ノーマル
 - `13` — 青山龍星
 
-Pass `--speaker <id>` to `synthesize_narration.py`.
+Pass `--speaker <id>` to `synthesize_narration.py`, or set `scenes[i].speaker` in the scene JSON to override per-scene.
 
 ## Anthropic API key
 
@@ -67,6 +69,8 @@ The scripts read this via `python-dotenv`. The key is also honored from `os.envi
 <repo-root>/
 ├── .env
 ├── package.json
+├── tsconfig.json
+├── remotion.config.ts
 ├── scripts/
 │   └── ukiyoe/
 │       ├── generate.py
@@ -76,7 +80,8 @@ The scripts read this via `python-dotenv`. The key is also honored from `os.envi
 │       ├── synthesize_narration.py
 │       └── _healthcheck.py
 ├── src/
-│   ├── Root.tsx
+│   ├── index.ts             # registerRoot(RemotionRoot)
+│   ├── Root.tsx             # Composition registration
 │   ├── components/
 │   │   ├── KenBurns.tsx
 │   │   └── BilingualSubtitle.tsx
